@@ -22,16 +22,16 @@ Topics I will cover here
    - Circular Queue
    - Double Ended Queue - DeQueue 
    
- 4. Trees
+4. Trees
  
- 5. Graph
+5. Graph
  
- 6. Sorting
+6. Sorting
  
- 7. Searching
+7. Searching
  
- 8. Dynamic Programming
+8. Dynamic Programming
  
- 9. Greedy algorithm
+9. Greedy algorithm
  
- 10. 
+10. more to add.. 
