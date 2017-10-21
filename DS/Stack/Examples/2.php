@@ -1,15 +1,13 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*
+ * Author: Mizanur Rahman <mizanur.rahman@gmail.com>
+ * 
  */
 
-include __DIR__. '/../../../Autoload.php';
+include __DIR__ . '/../../../Vendor/Autoload.php';
 
 use \DS\Stack\Classes\Stack;
-
 
 try {
     $programmingBooks = new Stack();

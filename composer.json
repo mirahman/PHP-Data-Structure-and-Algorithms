@@ -1,0 +1,22 @@
+{	"name": "mizan/phpds",
+	"description": "PHP Data structures and algorithms",
+	"license": "MIT",
+	"keywords": [
+		"php",
+		"data structure",
+		"algorithm",
+		"graph algorithm"
+	],
+	"authors": [
+        {
+            "name": "Mizanur Rahman",
+            "email": "mizanur.rahman@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"DS\\": "DS/",
+			"Algorithms\\":"Algorithms/"
+		}
+	}
+}

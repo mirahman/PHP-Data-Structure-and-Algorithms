@@ -1,5 +1,5 @@
 # PHP-Data-Structure-and-Algorithms
-This repository will feature different datastructure and algorithm implementations using PHP. Any feedback, bugs or suggestion will be welcomed. 
+This repository will feature different data structure and algorithm implementations using PHP. Any feedback, bugs or suggestion will be welcomed. 
 
 Topics I will cover here
 
@@ -7,17 +7,14 @@ Topics I will cover here
    - Single Linked list
    - Circular Linked list
    - Doubly Linked List
-   - Doubly Linked list using SPL 
    
 2. Stacks
    - Stack using Array
    - Stack using Linked List
-   - Stack using SPL
-   
+
 3. Queues
    - Queue using Array
    - Queue using Linked List
-   - Queue using SPL
    - Priority Queue
    - Circular Queue
    - Double Ended Queue - DeQueue 

@@ -1,13 +1,13 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*
+ * Author: Mizanur Rahman <mizanur.rahman@gmail.com>
+ * 
  */
 
 namespace DS\Stack\Classes;
-use DS\Stack\Interfaces\StackInterface;
+
+use \DS\Stack\Interfaces\StackInterface;
 use \DS\LinkedList\Classes\LinkedList;
 
 class Stack implements StackInterface {
