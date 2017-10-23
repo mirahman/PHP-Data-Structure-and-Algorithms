@@ -21,12 +21,12 @@ class LinkedList implements \Iterator {
         $newNode = new ListNode($data);
         if ($this->_firstNode === NULL) {
             $this->_firstNode = &$newNode;
-            $this->_lastNode = $newNode;
+            $this->_lastNode = &$newNode;
         } else {
             $currentNode = $this->_lastNode;
             $currentNode->next = $newNode;
             $newNode->prev = $currentNode;
-            $this->_lastNode = $newNode;
+            $this->_lastNode = &$newNode;
         }
         $this->_totalNode++;
         return TRUE;
@@ -36,10 +36,12 @@ class LinkedList implements \Iterator {
         $newNode = new ListNode($data);
         if ($this->_firstNode === NULL) {
             $this->_firstNode = &$newNode;
+            $this->_lastNode = &$newNode;
         } else {
             $currentFirstNode = $this->_firstNode;
             $this->_firstNode = &$newNode;
             $newNode->next = $currentFirstNode;
+            $this->_lastNode = &$currentFirstNode;
         }
         $this->_totalNode++;
         return TRUE;
@@ -73,6 +75,7 @@ class LinkedList implements \Iterator {
                 }
                 $previous = $currentNode;
                 $currentNode = $currentNode->next;
+                
             }
         }
     }
@@ -90,6 +93,11 @@ class LinkedList implements \Iterator {
                     }
                     $currentNode->next = $newNode;
                     $this->_totalNode++;
+                    
+                    if($currentNode === $this->_lastNode) {
+                        $this->_lastNode = &$newNode;
+                    }
+                    
                     break;
                 }
                 $currentNode = $currentNode->next;
@@ -104,6 +112,7 @@ class LinkedList implements \Iterator {
                 $this->_firstNode = $this->_firstNode->next;
             } else {
                 $this->_firstNode = NULL;
+                $this->_lastNode = NULL;
             }
             $this->_totalNode--;
             return TRUE;
@@ -125,6 +134,7 @@ class LinkedList implements \Iterator {
                 }
 
                 $previousNode->next = NULL;
+                $this->_lastNode = &$previousNode;
                 $this->_totalNode--;
                 return TRUE;
             }
@@ -142,6 +152,10 @@ class LinkedList implements \Iterator {
                         $previous->next = NULL;
                     } else {
                         $previous->next = $currentNode->next;
+                    }
+                    
+                    if($currentNode === $this->_lastNode) {
+                        $this->_lastNode = &$previous;
                     }
 
                     $this->_totalNode--;
