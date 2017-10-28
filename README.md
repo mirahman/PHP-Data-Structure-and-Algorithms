@@ -42,7 +42,7 @@ Any feedback, bugs or suggestion will be welcomed.
     - Dijkstra
     - Floyd Warshall
     - Kruksal
-    - Prim Minimal Spanning tree
+    - Prim Minimum Spanning tree
     - Topological Sorting
  
 6. Sorting
@@ -76,10 +76,18 @@ Any feedback, bugs or suggestion will be welcomed.
     - Huffman Encoding (Greedy Algorithm)
     - Job Scheduler (Greedy Algorithm)
     - KMP String matching algorithm
-    - LCS
+    - Longest Common Subsequences (LCS)
     - Pattern Matching
     - Sparse Array 
 
 
 I know lots of things are missing in the list? Would you mind to let me know what you wanna see implemented? I will priortize those and add here. 
 
+
+# Coming Soon #
+
+- Big Number implementation using PHP 
+- Prime number generation 
+- AVL tree implemenations 
+- Project Euler Solutions in PHP for Hackerrank.com 
+- More algorithms 
