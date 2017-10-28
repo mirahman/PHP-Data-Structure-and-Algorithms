@@ -1,7 +1,12 @@
 # PHP-Data-Structure-and-Algorithms
-This repository will feature different data structure and algorithm implementations using PHP. Any feedback, bugs or suggestion will be welcomed. 
 
-Topics I will cover here
+Data structure and Algorithm is always important for any programming language. PHP, being one of the most popular language for web development, also requires the pure data structure and algorithm implementations. 
+
+In this project, i am trying to cover major data structure and algorithm implementations using PHP 7. For more details discussion about the topics, you can read my book , https://www.amazon.com/PHP-7-Data-Structures-Algorithms/dp/178646389X/
+
+Any feedback, bugs or suggestion will be welcomed. 
+
+# Topics covered #
 
 1. Linked List
    - Single Linked list
@@ -20,15 +25,61 @@ Topics I will cover here
    - Double Ended Queue - DeQueue 
    
 4. Trees
+   - Generic Tree
+   - Binary Tree
+   - Binary Search Tree
+   - Tree Traversal (In-order, pre-order, post-order)
+
+
+5. Heaps
+    - Min Heap
+    - Max Heap
  
 5. Graph
+    - BFS
+    - Bellman Ford Algorithm
+    - DFS
+    - Dijkstra
+    - Floyd Warshall
+    - Kruksal
+    - Prim Minimal Spanning tree
+    - Topological Sorting
  
 6. Sorting
+    - Bubble sort
+    - Bubble Sort with improvements
+    - Bucket sort
+    - Heap Sort
+    - Insertion Sort
+    - Merge Sort
+    - Quick Sort
+    - Radix Sort
+    - Selection Sort
  
 7. Searching
+    - BFS
+    - Binary Search (Iterative)
+    - Binary Search (Recursive)
+    - DFS
+    - DFS using Stack
+    - Exponential Search
+    - Interpolation Search
+    - Repetitive Binary Search
  
-8. Dynamic Programming
- 
-9. Greedy algorithm
- 
-10. more to add.. 
+8. Dynamic Programming and Others
+    - Sudoku (Backtracking)
+    - Collaborative Filtering
+    - DNA Sequencing (NeedlemanWunsch Algorithm)
+    - 0/1 KnapSack Dynamic Programming
+    - Fibonacci (Recursive)
+    - Fibonacci (Memoized)
+    - Huffman Encoding (Greedy Algorithm)
+    - Job Scheduler (Greedy Algorithm)
+    - KMP String matching algorithm
+    - LCS
+    - Pattern Matching
+    - Sparse Array 
+
+
+I know lots of things are missing in the list? Would you mind to let me know what you wanna see implemented? I will priortize those and add here. 
+
