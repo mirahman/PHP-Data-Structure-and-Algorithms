@@ -1,4 +1,4 @@
-# PHP-Data-Structure-and-Algorithms
+# PHP Data Structures and Algorithms
 
 Data structure and Algorithm is always important for any programming language. PHP, being one of the most popular language for web development, also requires the pure data structure and algorithm implementations. 
 
