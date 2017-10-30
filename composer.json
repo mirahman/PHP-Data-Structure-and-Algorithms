@@ -1,4 +1,5 @@
-{	"name": "mizan/phpds",
+{	
+	"name": "mizan/phpds",
 	"description": "PHP Data structures and algorithms",
 	"license": "MIT",
 	"keywords": [
@@ -8,11 +9,11 @@
 		"graph algorithm"
 	],
 	"authors": [
-        {
-            "name": "Mizanur Rahman",
-            "email": "mizanur.rahman@gmail.com"
-        }
-    ],
+		{
+			"name": "Mizanur Rahman",
+			"email": "mizanur.rahman@gmail.com"
+		}
+	],
 	"autoload": {
 		"psr-4": {
 			"DS\\": "DS/",
