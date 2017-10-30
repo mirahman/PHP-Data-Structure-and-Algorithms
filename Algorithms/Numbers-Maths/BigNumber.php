@@ -7,7 +7,6 @@
  */
 
 
-
 class BigInteger
 {
 
@@ -44,7 +43,8 @@ class BigInteger
         if ($number == "0") $this->lastDigit = 0;
     }
 
-    public static function print(BigInteger &$n) {
+    public static function print(BigInteger &$n)
+    {
         if ($n->signBit == BigInteger::MINUS) echo "- ";
         for ($i = $n->lastDigit; $i >= 0; $i--)
             echo $n->digits[$i];
@@ -242,12 +242,13 @@ class BigInteger
         $b->signBit = $bsign;
     }
 
-    public static function factorial (int $n, BigInteger &$c) {
+    public static function factorial(int $n, BigInteger &$c)
+    {
 
         BigInteger::toBigInteger("1", $c);
 
-        if($n > 0) {
-            for($i = 1;$i<=$n;$i++) {
+        if ($n > 0) {
+            for ($i = 1; $i <= $n; $i++) {
                 $tmp = clone $c;
                 $number = new BigInteger($i);
                 $result = new BigInteger("0");
@@ -258,8 +259,23 @@ class BigInteger
         BigInteger::zeroJustify($c);
     }
 
-}
+    public static function power(BigInteger &$a, int $n, BigInteger &$c)
+    {
 
+        BigInteger::toBigInteger("1", $c);
+
+        if ($n > 0) {
+            for ($i = 0; $i < $n; $i++) {
+                $tmp = clone $c;
+                $result = new BigInteger("0");
+                BigInteger::multiply($a, $tmp, $result);
+                $c = $result;
+            }
+        }
+        BigInteger::zeroJustify($c);
+    }
+
+}
 
 
 $first = new BigInteger("1234567812345678123456781234567812345678");
@@ -280,6 +296,11 @@ BigInteger::print($multiply);
 $divide = new BigInteger("0");
 BigInteger::divide($first, $second, $divide);
 BigInteger::print($divide);
+
+$number = new BigInteger("55");
+$power = new BigInteger("0");
+BigInteger::power($number, 5, $power);
+BigInteger::print($power);
 
 $factorial = new BigInteger("0");
 BigInteger::factorial(100, $factorial);
