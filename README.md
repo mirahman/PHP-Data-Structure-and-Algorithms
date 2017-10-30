@@ -82,6 +82,7 @@ Any feedback, bugs or suggestion will be welcomed.
     
  10. Numbers and Maths
     - PHP Big Integer Implementation
+    - Prime number generation - Sieve
 
 
 I know lots of things are missing in the list? Would you mind to let me know what you wanna see implemented? I will priortize those and add here. 
@@ -89,7 +90,6 @@ I know lots of things are missing in the list? Would you mind to let me know wha
 
 # Coming Soon #
 
-- Prime number generation 
 - AVL tree implemenations 
 - Project Euler Solutions in PHP for Hackerrank.com 
 - More algorithms 
