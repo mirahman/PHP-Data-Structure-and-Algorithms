@@ -35,7 +35,7 @@ Any feedback, bugs or suggestion will be welcomed.
     - Min Heap
     - Max Heap
  
-5. Graph
+6. Graph
     - BFS
     - Bellman Ford Algorithm
     - DFS
@@ -45,7 +45,7 @@ Any feedback, bugs or suggestion will be welcomed.
     - Prim Minimum Spanning tree
     - Topological Sorting
  
-6. Sorting
+7. Sorting
     - Bubble sort
     - Bubble Sort with improvements
     - Bucket sort
@@ -56,7 +56,7 @@ Any feedback, bugs or suggestion will be welcomed.
     - Radix Sort
     - Selection Sort
  
-7. Searching
+8. Searching
     - BFS
     - Binary Search (Iterative)
     - Binary Search (Recursive)
@@ -66,7 +66,7 @@ Any feedback, bugs or suggestion will be welcomed.
     - Interpolation Search
     - Repetitive Binary Search
  
-8. Dynamic Programming and Others
+9. Dynamic Programming and Others
     - Sudoku (Backtracking)
     - Collaborative Filtering
     - DNA Sequencing (NeedlemanWunsch Algorithm)
@@ -79,6 +79,9 @@ Any feedback, bugs or suggestion will be welcomed.
     - Longest Common Subsequences (LCS)
     - Pattern Matching
     - Sparse Array 
+    
+ 10. Numbers and Maths
+    - PHP Big Integer Implementation
 
 
 I know lots of things are missing in the list? Would you mind to let me know what you wanna see implemented? I will priortize those and add here. 
@@ -86,7 +89,6 @@ I know lots of things are missing in the list? Would you mind to let me know wha
 
 # Coming Soon #
 
-- Big Number implementation using PHP 
 - Prime number generation 
 - AVL tree implemenations 
 - Project Euler Solutions in PHP for Hackerrank.com 
