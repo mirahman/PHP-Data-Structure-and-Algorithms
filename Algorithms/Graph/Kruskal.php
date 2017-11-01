@@ -7,7 +7,7 @@
  * 
  */
 
-function Kruskal(array $graph): array {
+function kruskal(array $graph): array {
     $len = count($graph);
     $tree = [];
 
@@ -67,7 +67,7 @@ $graph = [
     [0, 0, 4, 2, 6, 0]
 ];
 
-$mst = Kruskal($graph);
+$mst = kruskal($graph);
 
 $minimumCost = 0;
 

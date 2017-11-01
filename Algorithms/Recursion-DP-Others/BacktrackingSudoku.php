@@ -9,17 +9,17 @@
 define("N", 9);
 define("UNASSIGNED", 0);
 
-function SolveSudoku(array &$grid): bool {
+function solveSudoku(array &$grid): bool {
     $row = $col = 0;
 
-    if (!FindUnassignedLocation($grid, $row, $col))
+    if (!findUnassignedLocation($grid, $row, $col))
 	return true; // success! no empty space
 
     for ($num = 1; $num <= N; $num++) {
 	if (isSafe($grid, $row, $col, $num)) {
 	    $grid[$row][$col] = $num; // make tentative assignment
 
-	    if (SolveSudoku($grid))
+	    if (solveSudoku($grid))
 		return true;  // return, if success// return, if success
 
 	    $grid[$row][$col] = UNASSIGNED;  // failure, unmake & try again
@@ -28,7 +28,7 @@ function SolveSudoku(array &$grid): bool {
     return false; // triggers backtracking
 }
 
-function FindUnassignedLocation(array &$grid, int &$row, int &$col): bool {
+function findUnassignedLocation(array &$grid, int &$row, int &$col): bool {
     for ($row = 0; $row < N; $row++)
 	for ($col = 0; $col < N; $col++)
 	    if ($grid[$row][$col] == UNASSIGNED)
@@ -36,15 +36,15 @@ function FindUnassignedLocation(array &$grid, int &$row, int &$col): bool {
     return false;
 }
 
-function UsedInRow(array &$grid, int $row, int $num): bool {
+function usedInRow(array &$grid, int $row, int $num): bool {
     return in_array($num, $grid[$row]);
 }
 
-function UsedInColumn(array &$grid, int $col, int $num): bool {
+function usedInColumn(array &$grid, int $col, int $num): bool {
     return in_array($num, array_column($grid, $col));
 }
 
-function UsedInBox(array &$grid, int $boxStartRow, int $boxStartCol, int $num):bool {
+function usedInBox(array &$grid, int $boxStartRow, int $boxStartCol, int $num):bool {
     for ($row = 0; $row < 3; $row++)
 	for ($col = 0; $col < 3; $col++)
 	    if ($grid[$row + $boxStartRow][$col + $boxStartCol] == $num)
@@ -54,9 +54,9 @@ function UsedInBox(array &$grid, int $boxStartRow, int $boxStartCol, int $num):b
 
 function isSafe(array $grid, int $row, int $col, int $num): bool {
 
-    return !UsedInRow($grid, $row, $num) &&
-	    !UsedInColumn($grid, $col, $num) &&
-	    !UsedInBox($grid, $row - $row % 3, $col - $col % 3, $num);
+    return !usedInRow($grid, $row, $num) &&
+	    !usedInColumn($grid, $col, $num) &&
+	    !usedInBox($grid, $row - $row % 3, $col - $col % 3, $num);
 }
 
 /* A utility function to print grid  */
@@ -80,7 +80,7 @@ $grid = [
     [0, 0, 2, 0, 9, 0, 5, 0, 0]
 ];
 
-if (SolveSudoku($grid) == true)
+if (solveSudoku($grid) == true)
     printGrid($grid);
 else
     echo "No solution exists";

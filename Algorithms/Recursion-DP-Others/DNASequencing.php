@@ -11,7 +11,7 @@ define("SP", 1);
 define("GP", -1);
 define("MS", -1);
 
-function NWSquencing(string $s1, string $s2) {
+function nwSquencing(string $s1, string $s2) {
     $grid = [];
     $M = strlen($s1);
     $N = strlen($s2);
@@ -89,4 +89,4 @@ function printSequence($grid, $s1, $s2, $j, $i) {
 
 $X = "GAATTCAGTTA";
 $Y = "GGATCGA";
-NWSquencing($X, $Y);
+nwSquencing($X, $Y);

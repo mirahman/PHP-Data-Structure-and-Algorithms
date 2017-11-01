@@ -5,7 +5,7 @@
  * 
  */
 
-function Dijkstra(array $graph, string $source, string $target): array {
+function dijkstra(array $graph, string $source, string $target): array {
     $dist = [];
     $pred = [];
     $Queue = new SplPriorityQueue();
@@ -60,7 +60,7 @@ $graph = [
 $source = "A";
 $target = "F";
 
-$result = Dijkstra($graph, $source, $target);
+$result = dijkstra($graph, $source, $target);
 extract($result);
 
 echo "Distance from $source to $target is $distance \n";

@@ -5,14 +5,14 @@
  * 
  */
 
-function KMPStringMatching(string $str, string $pattern): array {
+function kmpStringMatching(string $str, string $pattern): array {
     $matches = [];
     $M = strlen($pattern);
     $N = strlen($str);
     $i = $j = 0;
     $lps = [];
 
-    ComputeLPS($pattern, $lps);
+    computeLPS($pattern, $lps);
 
     while ($i < $N) {
 	if ($pattern[$j] == $str[$i]) {
@@ -33,7 +33,7 @@ function KMPStringMatching(string $str, string $pattern): array {
     return $matches;
 }
 
-function ComputeLPS(string $pattern, array &$lps) {
+function computeLPS(string $pattern, array &$lps) {
     $len = 0;
     $i = 1;
     $M = strlen($pattern);
@@ -58,7 +58,7 @@ function ComputeLPS(string $pattern, array &$lps) {
 
 $txt = "AABAACAADAABABBBAABAA";
 $pattern = "AABA";
-$matches = KMPStringMatching($txt, $pattern);
+$matches = kmpStringMatching($txt, $pattern);
 
 if ($matches) {
     foreach ($matches as $pos) {
