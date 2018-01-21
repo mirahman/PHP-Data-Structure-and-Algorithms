@@ -74,7 +74,6 @@ class LinkedList implements \Iterator {
                     } else {
                         $previous->next = $newNode;
                     }
-                    $previous->next = $newNode;
                     $this->_totalNode++;
                     break;
                 }
