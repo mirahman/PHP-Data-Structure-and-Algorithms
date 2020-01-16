@@ -29,6 +29,7 @@ Any feedback, bugs or suggestion will be welcomed.
    - Binary Tree
    - Binary Search Tree
    - Tree Traversal (In-order, pre-order, post-order)
+   - Trie (Simple insert and search operation)
 
 
 5. Heaps
