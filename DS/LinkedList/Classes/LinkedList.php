@@ -69,7 +69,11 @@ class LinkedList implements \Iterator {
             while ($currentNode !== NULL) {
                 if ($currentNode->data === $query) {
                     $newNode->next = $currentNode;
-                    $previous->next = $newNode;
+                    if ($previous === NULL) {
+                        $this->_firstNode = &$newNode;
+                    } else {
+                        $previous->next = $newNode;
+                    }
                     $this->_totalNode++;
                     break;
                 }
